@@ -3,6 +3,7 @@
 
 #include<iostream>
 #include<string>
+
 using namespace std;
 
 class Student{
@@ -15,7 +16,7 @@ class Student{
 		// Student(string, int, int);
         ~Student();
         // Student(string, int);
-		void display();
+		void display() const;
 };
 
 #endif

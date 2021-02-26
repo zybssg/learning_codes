@@ -1,12 +1,14 @@
 #include<iostream>
+
 using namespace std;
 
-int main() {
-	int a=2;
-	int b=3;
-	float c = b/a;
+int func1(int a){
+	return a;
+}
 
-	cout << (b>a? 2:1) << endl;
-
-	return 0;
+int main(){
+	int (*p)(int) = &func1;
+	cout << p << endl;  // 0
+	// p = &func1;
+	cout << p << endl;  //1
 }

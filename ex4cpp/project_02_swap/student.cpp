@@ -1,4 +1,4 @@
-#include "my_head_file.h"
+#include "headfile.h"
 using namespace std;
 
 
@@ -21,7 +21,7 @@ Student::~Student(){
 // }
 
 
-void Student::display(){
-	cout << name << " is " << age << " years old." << endl;
+void Student::display() const{
+	cout << this->name << " is " << (*this).age << " years old." << endl;
 	cout << "the score of " << name << " is " << score << endl;
 }
